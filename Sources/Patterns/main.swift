@@ -34,26 +34,14 @@ Examples of Reusable Design Patterns:
 * "\(Patterns.proxy.rawValue)"
 """
 
-func validate() -> [String] {
-    return Patterns.allCases.map { $0.rawValue }
-}
-
 class AppCommand: Command {
     
-    let name: String = "-p"
-
-    @Param var patterns: String
+    let name = "pattern"
     
-    let percentage = Input.readLine(
-        prompt: "Pattern:",
-        // validation: [.contains(Patterns.allCases.map { $0.rawValue })],
-        errorResponse: { (input, reason) in
-            Term.stderr <<< "'\(input)' is invalid; must be a number between 0 and 100"
-        }
-    )
-
+    @Param var volume: Patterns
+    
     func execute() throws {
-        stdout <<< "Hello \(patterns)!"
+        getRunner(pattern: volume).run()
     }
 }
 

@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftCLI
 
-enum Patterns: String, CaseIterable {
+enum Patterns: String, CaseIterable, ConvertibleFromString {
     // Behavioral
     case chainOfResponsibility = "Chain of Responsibility"
     case command = "Command"
