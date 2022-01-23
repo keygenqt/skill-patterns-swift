@@ -5,3 +5,5 @@ gradlew.bat
 out
 *.snap
 *.snap.*
+.build
+.swiftpm
