@@ -1,0 +1,7 @@
+.gradle
+build
+gradlew.bat
+.idea
+out
+*.snap
+*.snap.*
