@@ -31,3 +31,10 @@ Examples classic OOP design patterns
 * (coming soon) Facade
 * (coming soon) Flyweight
 * (coming soon) Proxy
+
+
+#### Run example
+
+```bash
+patterns pattern "{Name Pattern}"
+```
