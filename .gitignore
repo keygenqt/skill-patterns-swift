@@ -7,3 +7,4 @@ out
 *.snap.*
 .build
 .swiftpm
+.DS_Store
