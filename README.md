@@ -17,7 +17,7 @@ Examples classic OOP design patterns
 * (coming soon) Visitor
 
 ### Creational
-* (coming soon) Abstract factory
+* [Abstract factory](https://github.com/keygenqt/skill-patterns-swift/blob/master/Sources/Patterns/Creational/AbstractFactory)
 * [Builder](https://github.com/keygenqt/skill-patterns-swift/blob/master/Sources/Patterns/Creational/Builder)
 * (coming soon) Factory Method
 * (coming soon) Prototype
