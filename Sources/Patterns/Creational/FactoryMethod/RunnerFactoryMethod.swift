@@ -9,6 +9,11 @@ import Foundation
 
 struct RunnerFactoryMethod: IRunner {
     func run() {
-        print("RunnerFactoryMethod")
+        // random type
+        let type = ["Huawei", "Samsung"].randomElement()
+        // get phone
+        let phone: IPhone = (type == "Huawei" ? Huawei() : Samsung())
+        // call phone
+        phone.call()
     }
 }
